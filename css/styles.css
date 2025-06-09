@@ -449,3 +449,104 @@ body {
   margin-bottom: 10px;
   font-size: 18px;
 }
+
+
+/* FAQ Box */
+.faq-box {
+  width: 300px;
+  text-align: left;
+}
+
+.faq-box details {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-box summary {
+  font-weight: bold;
+}
+.faq-box details[open] {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.faq-chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+/* Chatbot and FAQ both take full width on mobile */
+.chatbot-box,
+.faq-box {
+  width: 100%;
+  max-width: 100%;
+}
+h2{
+  text-align: center;
+}
+/* Adjust layout for tablets and up */
+@media (min-width: 768px) {
+  .faq-chat-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .chatbot-box,
+  .faq-box {
+    flex: 1 1 50%;
+    max-width: 480px;
+  }
+}
+
+.chatbot-box {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  height: 420px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  color: #555;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.chat-input-group {
+  display: flex;
+  gap: 8px;
+}
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.chat-submit {
+  background: #f57c1f;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.chat-submit:hover {
+  background: #d96500;
+}
