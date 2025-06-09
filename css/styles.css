@@ -86,7 +86,7 @@ body {
   width: 500px;
   height: auto;
 }
- .section {
+ .aboutus {
       display: grid;
       gap: 40px;
       max-width: 1000px;
@@ -145,3 +145,71 @@ body {
         order: 0;
       }
     }
+    /* Services */
+.services-section {
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 300%;
+  touch-action: pan-y;
+}
+
+.service-card {
+  width: 100vw;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fdf5f0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.service-card h3 {
+  color: #e66a2c;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+.cta-button {
+  background-color: #e66a2c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .carousel-track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: none !important;
+    transition: none;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+}
