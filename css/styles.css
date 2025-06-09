@@ -550,3 +550,121 @@ h2{
 .chat-submit:hover {
   background: #d96500;
 }
+.team-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .team-section > p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      min-width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .card .title {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .icons i {
+      margin: 0 5px;
+      font-size: 1rem;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f0f0f0;
+      border: none;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .dots {
+      margin-top: 20px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        min-width: 250px;
+        margin: 0 10px;
+      }
+      .carousel {
+        justify-content: center;
+      }
+    }
+
