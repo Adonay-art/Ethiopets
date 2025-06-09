@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-// Carousel swipe functionality
+  // Responsive nav toggle
+  const toggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Carousel swipe functionality
   const track = document.getElementById('carouselTrack');
   if (track) {
     let startX = 0;
